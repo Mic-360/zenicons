@@ -1,0 +1,9 @@
+node_modules
+dist
+src/icons.tsx
+demo/dist
+*.tsbuildinfo
+demo/vite.config.js
+demo/vite.config.d.ts
+*.log
+.DS_Store

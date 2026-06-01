@@ -1,0 +1,12 @@
+# Published files are controlled by package.json#files.
+.github
+demo
+node_modules
+scripts
+src
+svgs
+tsconfig.json
+tsconfig.build.json
+tsup.config.ts
+*.log
+.DS_Store

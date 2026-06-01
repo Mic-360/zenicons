@@ -1,0 +1,76 @@
+{
+  "name": "zenicons",
+  "version": "0.1.0",
+  "description": "3,201 tree-shakeable React SVG icons with an editorial demo and verified publish pipeline.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "author": {
+    "name": "Bhaumic Singh",
+    "url": "https://bhaumicsingh.dev/"
+  },
+  "homepage": "https://github.com/mic-360/zenicons#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mic-360/zenicons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mic-360/zenicons/issues"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "generate": "node scripts/build-icons.mjs",
+    "build": "npm run generate && tsup && tsc -p tsconfig.build.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build && npm run verify:package",
+    "verify:package": "node scripts/verify-package.mjs",
+    "clean": "node scripts/clean.mjs",
+    "demo:install": "npm --prefix demo install",
+    "demo:build": "npm --prefix demo run build",
+    "demo:dev": "npm --prefix demo run dev",
+    "check": "npm run build && npm run verify:package && npm run demo:build"
+  },
+  "peerDependencies": {
+    "react": ">=16.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.3.1",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  },
+  "keywords": [
+    "react",
+    "icons",
+    "svg",
+    "icon-pack",
+    "design-system",
+    "tree-shaking",
+    "editorial-ui"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
