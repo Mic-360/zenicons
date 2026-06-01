@@ -1,0 +1,40 @@
+name: Continuous integration
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            demo/package-lock.json
+
+      - name: Install root dependencies
+        run: npm ci
+
+      - name: Install demo dependencies
+        working-directory: demo
+        run: npm ci
+
+      - name: Build icon package
+        run: npm run build
+
+      - name: Verify npm package contents
+        run: npm run verify:package
+
+      - name: Build demo
+        run: npm run demo:build
