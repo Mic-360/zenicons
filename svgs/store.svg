@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.49801 9.74905C7.49801 10.9922 6.49023 12 5.24707 12" stroke="#161924" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.9999 9.74905C11.9999 10.9922 10.9921 12 9.74898 12C8.50583 12 7.49805 10.9922 7.49805 9.74905" stroke="#161924" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.5019 9.74905C16.5019 10.9922 15.4941 12 14.2509 12C13.0078 12 12 10.9922 12 9.74905" stroke="#161924" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.7529 12C17.5097 12 16.502 10.9922 16.502 9.74905" stroke="#161924" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20.0031 11.6208V21.0038" stroke="#161924" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.0044 21.0037H1.99609" stroke="#161924" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.9963 11.6188V21.0037" stroke="#161924" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="13.501" y="15.0013" width="4.00167" height="3.00125" rx="0.5" stroke="#161924" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.99805 21.0038V15.5015C6.99805 15.2252 7.222 15.0013 7.49826 15.0013H9.9993C10.2756 15.0013 10.4995 15.2252 10.4995 15.5015V21.0038" stroke="#161924" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.49826 9.74905V8.99874" stroke="#161924" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.0002 9.74905V8.99874" stroke="#161924" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.5022 9.74905V8.99874" stroke="#161924" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20.9144 8.99874H3.08496" stroke="#161924" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.7527 12V12C19.9958 12 21.0036 10.9922 21.0036 9.74907V9.62202C21.0036 9.21418 20.8927 8.81403 20.6825 8.46453L18.5816 4.96808C18.2207 4.36664 17.5713 3.99807 16.8699 3.99667H7.12984C6.42702 3.99667 5.77572 4.36542 5.41412 4.96808L3.31325 8.46453C3.10445 8.81443 2.99483 9.21456 2.9961 9.62202V9.74907C2.9961 10.9922 4.0039 12 5.24705 12V12" stroke="#161924" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
