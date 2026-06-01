@@ -14,14 +14,19 @@ const stdout = execSync(`${npmCommand} pack --json --dry-run --ignore-scripts`, 
   encoding: 'utf8',
 });
 
-const jsonStart = stdout.indexOf('[');
-const jsonEnd = stdout.lastIndexOf(']');
-
-if (jsonStart === -1 || jsonEnd === -1 || jsonEnd < jsonStart) {
+const jsonStartMatch = stdout.match(/\[\s*\{/);
+if (!jsonStartMatch) {
   throw new Error(`Failed to find JSON array in npm pack output:\n${stdout}`);
 }
+const jsonStart = jsonStartMatch.index;
+const jsonContent = stdout.slice(jsonStart);
+const jsonEnd = jsonContent.lastIndexOf(']');
 
-const packed = JSON.parse(stdout.slice(jsonStart, jsonEnd + 1));
+if (jsonEnd === -1) {
+  throw new Error(`Failed to find closing bracket in npm pack output:\n${stdout}`);
+}
+
+const packed = JSON.parse(jsonContent.slice(0, jsonEnd + 1));
 
 const [packResult] = packed;
 
