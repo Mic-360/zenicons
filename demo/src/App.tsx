@@ -26,7 +26,7 @@ type HeroSymbol = {
   tone: 'ink' | 'copper' | 'paper';
 };
 
-const REPO_URL = 'https://github.com/mic-360/zenicons';
+const REPO_URL = 'https://github.com/Mic-360/zenicons';
 const README_URL = `${REPO_URL}#readme`;
 const SECURITY_URL = `${REPO_URL}/blob/main/SECURITY.md`;
 const GUIDE_URL = `${REPO_URL}/blob/main/PUBLISH_GUIDE.md`;

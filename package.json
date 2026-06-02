@@ -9,13 +9,13 @@
     "name": "Bhaumic Singh",
     "url": "https://bhaumicsingh.dev/"
   },
-  "homepage": "https://github.com/mic-360/zenicons#readme",
+  "homepage": "https://github.com/Mic-360/zenicons#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mic-360/zenicons.git"
+    "url": "git+https://github.com/Mic-360/zenicons.git"
   },
   "bugs": {
-    "url": "https://github.com/mic-360/zenicons/issues"
+    "url": "https://github.com/Mic-360/zenicons/issues"
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",

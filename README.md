@@ -2,7 +2,7 @@
 
 Zenicons is a publish-ready React icon pack built from raw SVG sources and shipped as tree-shakeable components. It currently contains **3,201** icons, a shared `IconBase`, a searchable editorial demo, and a hardened publish pipeline aimed at keeping npm releases clean and predictable.
 
-**Live catalogue:** <https://mic-360.github.io/zenicons/>
+**Live catalogue:** <https://Mic-360.github.io/zenicons/>
 
 ## Why this package exists
 
@@ -27,15 +27,15 @@ yarn add @bhaumic/zenicons
 ### GitHub (available today)
 
 ```bash
-npm install github:mic-360/zenicons
-pnpm add github:mic-360/zenicons
-yarn add github:mic-360/zenicons
+npm install github:Mic-360/zenicons
+pnpm add github:Mic-360/zenicons
+yarn add github:Mic-360/zenicons
 ```
 
 For reproducible installs from GitHub, pin a tag or commit SHA:
 
 ```bash
-npm install github:mic-360/zenicons#v0.1.0
+npm install github:Mic-360/zenicons#v0.1.0
 ```
 
 ## Usage
@@ -82,7 +82,7 @@ Icons are `aria-hidden` by default. If you provide `title` or `aria-label`, the 
 ## Local development
 
 ```bash
-git clone https://github.com/mic-360/zenicons.git
+git clone https://github.com/Mic-360/zenicons.git
 cd zenicons
 npm ci
 npm --prefix demo ci
@@ -117,7 +117,7 @@ The recommended release path is **npm trusted publishing via GitHub Actions**, n
 
 ## Author
 
-Built by [Bhaumic Singh](https://bhaumicsingh.dev/) — GitHub: [mic-360](https://github.com/mic-360)
+Built by [Bhaumic Singh](https://bhaumicsingh.dev/) — GitHub: [Mic-360](https://github.com/Mic-360)
 
 ## License
 
