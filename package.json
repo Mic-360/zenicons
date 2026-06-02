@@ -1,5 +1,5 @@
 {
-  "name": "zenicons",
+  "name": "@bhaumic/zenicons",
   "version": "0.1.0",
   "description": "3,201 tree-shakeable React SVG icons with an editorial demo and verified publish pipeline.",
   "license": "MIT",

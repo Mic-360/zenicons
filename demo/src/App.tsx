@@ -9,8 +9,8 @@ import {
 } from 'react';
 import AutoSizer from 'react-virtualized-auto-sizer';
 import { FixedSizeGrid, type GridChildComponentProps } from 'react-window';
-import * as Icons from 'zenicons';
-import { iconCount, type IconProps } from 'zenicons';
+import * as Icons from '@bhaumic/zenicons';
+import { iconCount, type IconProps } from '@bhaumic/zenicons';
 
 type IconEntry = {
   name: string;
@@ -137,7 +137,7 @@ export function App() {
   }, [copiedName]);
 
   const onCopy = async (entry: IconEntry) => {
-    const snippet = `import { ${entry.name} } from "zenicons";`;
+    const snippet = `import { ${entry.name} } from "@bhaumic/zenicons";`;
     try {
       await navigator.clipboard.writeText(snippet);
       setCopiedName(entry.name);
@@ -431,7 +431,7 @@ function CatalogueCell({
     >
       <button
         className={`catalogue-card${isCopied ? ' is-copied' : ''}`}
-        title={`Copy: import { ${entry.name} } from "zenicons"`}
+        title={`Copy: import { ${entry.name} } from "@bhaumic/zenicons"`}
         onClick={() => onCopy(entry)}
         aria-label={`Copy import for ${entry.name}`}
         aria-pressed={isCopied}

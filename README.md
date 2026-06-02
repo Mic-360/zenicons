@@ -19,9 +19,9 @@ Zenicons is configured for npm publishing. Until the first public registry relea
 ### npm (after the first public release)
 
 ```bash
-npm install zenicons
-pnpm add zenicons
-yarn add zenicons
+npm install @bhaumic/zenicons
+pnpm add @bhaumic/zenicons
+yarn add @bhaumic/zenicons
 ```
 
 ### GitHub (available today)
@@ -41,7 +41,7 @@ npm install github:mic-360/zenicons#v0.1.0
 ## Usage
 
 ```tsx
-import { IconAddressBookEmail, IconSigma } from 'zenicons';
+import { IconAddressBookEmail, IconSigma } from '@bhaumic/zenicons';
 
 export function Example() {
   return (
